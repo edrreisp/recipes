@@ -6,7 +6,7 @@ import ExploreScreen from "../Containers/ExploreScreen";
 import CategoriesScreen from "../Containers/CategoriesScreen";
 import FavoritesScreen from "../Containers/FavoritesScreen";
 import CustomIcon from "../Components/CustomIcon";
-
+import ExploreNavigator from '../Components/ExploreNavigator';
 
 
 const Tab = createBottomTabNavigator();
@@ -26,7 +26,7 @@ const Tabs = () =>{
         headerShown: false, }}>
 
         
-        <Tab.Screen name="Explore" component={ExploreScreen}
+        <Tab.Screen name="Explore" component={ExploreNavigator}
         options={{
             tabBarIcon: ({focused}) =>(
                 <View style={styles.tabView}>

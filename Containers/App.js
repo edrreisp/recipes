@@ -11,7 +11,6 @@
  import { createStackNavigator } from '@react-navigation/stack';
  import { NavigationContainer } from '@react-navigation/native';
  import TabBar from "../Components/TabBar";
- import RecipeDetail from './RecipeDetail';
  
 
 
@@ -28,7 +27,6 @@ const Stack = createStackNavigator();
     <NavigationContainer>
       <Stack.Navigator >
         <Stack.Screen name="TabBar" component={TabBar} options={{ headerMode:'none', }} />
-        <Stack.Screen name="Detail" component={RecipeDetail}/>
       </Stack.Navigator>
     </NavigationContainer>
     
